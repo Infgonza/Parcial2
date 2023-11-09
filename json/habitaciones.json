@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "titulo": "Hotel Cordon del Plata - Capital",
+      "imagen": "/habs/habi1.jpg",
+      "precio": 1200,
+      "ubicacion": "Capital",
+      "descripcion": "Hermosa habitacion"
+    },
+    {
+      "id": 2,
+      "titulo": "Agua del Corral Hotel & Spa - Godoy Cruz",
+      "imagen": "/habs/habi2.jpg",
+      "precio": 1500,
+      "ubicacion": "Godoy Cruz",
+      "descripcion": "Hermosa habitacion"
+    },
+    {
+      "id": 3,
+      "titulo": "Terrazas de Rondeau - Godoy Cruz",
+      "imagen": "/habs/habi3.jpg",
+      "precio": 2500,
+      "ubicacion": "Godoy Cruz",
+      "descripcion": "Hermosa habitacion"
+    },
+    {
+      "id": 4,
+      "titulo": "Hotel Aconcagua - Capital",
+      "imagen": "/habs/habi4.jpg",
+      "precio": 3500,
+      "ubicacion": "Capital",
+      "descripcion": "Hermosa habitacion"
+    }
+  ]
+  

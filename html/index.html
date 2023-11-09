@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de inmuebles</title>
+    <link rel="stylesheet" href="/estilos.css">
+    <script src="https://kit.fontawesome.com/5e627074d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="js\casas.js"></script>
+    <header>
+        <div class="encabezado">
+            <div>
+                <a href="index.html"><h1>BELGRANO INMUEBLES</h1></a>
+            </div>
+            <div class="encabezado_contacto">
+                <h2>
+                    <a href="https://instagram.com" target="_blank">CONTACTO</a>
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="subtitulo">
+            <div><h1>Encontrá tu hogar</h1></div>
+        </div>
+        <div id="inmuebles"></div>
+        <div class="inmuebles">
+            <div class="img">
+                <figure>
+                    <a href="departamentos.html"><center><img src="/departamento.jpg" alt="remeras"></center></a>
+                </figure>
+                <div class="info">
+                    <a href="departamentos.html"><h2>DEPARTAMENTOS</h2></a>
+                    <a href="departamentos.html">VER MÁS</a>
+                </div>
+            </div>
+            <div class="img">
+                <figure>
+                    <a href="casas.html"><center><img src="/casas.jpg" alt="casas"></center></a>
+                </figure>
+                <div class="info">
+                    <a href="casas.html"><h2>CASAS</h2></a>
+                    <a href="casas.html">VER MÁS</a>
+                </div>
+            </div>
+            <div class="img">
+                <figure>
+                    <a href="habitaciones.html"><center><img src="/habitaciones.jpg" alt="habitaciones de hotel"></center></a>
+                </figure>
+                <div class="info">
+                    <a href="habitaciones.html"><h2>HABITACIONES</h2></a>
+                    <a href="habitaciones.html">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog">
+            <h1>SOBRE NOSOTROS</h1>
+            <div class="blog2"><p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, voluptates. Blanditiis veritatis vitae aliquid accusantium harum deleniti culpa nam et laboriosam, magni, placeat sit totam fugit quam voluptatum nulla suscipit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium possimus exercitationem, nesciunt numquam delectus laudantium? Eius aliquid saepe quaerat recusandae aspernatur dolores, molestias eveniet nemo, eligendi perspiciatis impedit aliquam perferendis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel dignissimos non! Quo deleniti vel sapiente. Ad dicta obcaecati, voluptates sequi repellat consectetur et molestiae perspiciatis commodi, aperiam tempora tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium consectetur vero unde in modi eum a repellendus. Ullam eligendi debitis laborum quae consequuntur expedita odit unde accusantium delectus voluptates.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam voluptatem cupiditate tempore aperiam quos? Provident ullam voluptatibus beatae pariatur quaerat dolorum voluptates qui aut incidunt, officia laborum aliquid ipsa rerum!
+            </p></div>
+            <div>
+                <h3>¿DONDE NOS ENCONTRAMOS?</h3>
+            </div>
+            <div class="blog2"><p>
+                Estamos en avenida Santa Fé 1895, entre Corrientes y Callao.
+            </p></div>
+        </div>
+        <form class="contacto" action="">
+            <div class="formulario">
+                <input name="Nombre" type="text" placeholder="Ingresa tu nombre" id="nombre">
+                <input name="Email" type="email" placeholder="Escribe tu Correo" id="email">
+                <input type="date" id="fecha">
+                <textarea name="Descripcion" id="sugerencia" cols="20" rows="10" placeholder="¡Escribenos tu sugerencia!"></textarea>
+            </div>
+            <div class="detalle">
+                <h3>¡Contactanos!</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolore labore vitae a eum tenetur quas sint, repudiandae ratione? Unde natus repudiandae facilis
+                    doloremque
+                    pariatur, aspernatur quae error consequatur earum eos.
+                </p>
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="pie">
+        <div class="g">
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iure?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iure?</p>
+             </div>
+             <div class="box">
+                 <h2>SIGUENOS</h2>
+                 <div class="redes">
+                     <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
+                     <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
+                     <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+                 </div>
+             </div>
+        </div>
+    </footer>
+
+    <script>
+        inputs= document.querySelectorAll('input');
+        
+        expresiones={
+            nombre: /^[a-zA-Z]{1,30}$/,
+            correo: /^[a-zA-Z0-9_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{1,30}$/
+        }
+
+        const validar = (e) => {
+            switch(e.target.id){
+                case "nombre":
+                    if (expresiones.nombre.test(e.target.value)){ 
+                        document.getElementById('nombre').classList.add('form_correcto');
+                        document.getElementById('nombre').classList.remove('form_error');
+                    } else {
+                        document.getElementById('nombre').classList.add('form_error');
+                        document.getElementById('nombre').classList.remove('form_correcto');
+                    }
+                    break;
+                    case "email":
+                    if (expresiones.correo.test(e.target.value)){
+                        document.getElementById('email').classList.add('form_correcto');
+                        document.getElementById('email').classList.remove('form_error');
+                    } else{
+                        document.getElementById('email').classList.add('form_error');
+                        document.getElementById('email').classList.remove('form_correcto');
+                    }
+                    break;
+
+            }
+
+        }
+        inputs.forEach((input) => {
+            input.addEventListener('keyup',validar);
+        });
+    </script>
+
+</body>
+</html>

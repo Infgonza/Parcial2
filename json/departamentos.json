@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "titulo": "Departamento 110m² - 4 Ambientes - Capital",
+      "imagen": "/deps/dep1.jpg",
+      "precio": 250000,
+      "ubicacion": "Capital",
+      "descripcion": "Hermoso departamento"
+    },
+    {
+      "id": 2,
+      "titulo": "Departamento 150m² - 2 Ambientes - Godoy Cruz",
+      "imagen": "/deps/dep2.jpg",
+      "precio": 300000,
+      "ubicacion": "Godoy Cruz",
+      "descripcion": "Hermoso departamento"
+    },
+    {
+      "id": 3,
+      "titulo": "Departamento - 170m² - 2 Ambientes - Godoy Cruz",
+      "imagen": "/deps/dep3.jpg",
+      "precio": 350000,
+      "ubicacion": "Godoy Cruz",
+      "descripcion": "Hermoso departamento"
+    },
+    {
+      "id": 4,
+      "titulo": "Departamento 110m² - 4 Ambientes - Capital",
+      "imagen": "/deps/dep4.jpg",
+      "precio": 220000,
+      "ubicacion": "Capital",
+      "descripcion": "Hermoso departamento"
+    }
+
+  ]
+  

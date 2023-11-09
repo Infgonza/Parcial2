@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "titulo": "Casa 198m² - 4 Ambientes - 2 cocheras - Capital",
+      "imagen": "/cas/casa1.jpg",
+      "precio": 185000,
+      "ubicacion": "Capital",
+      "descripcion": "Hermosa casa"
+    },
+    {
+      "id": 2,
+      "titulo": "Casa 230m² - 3 Ambientes - 2 baños - Godoy Cruz",
+      "imagen": "/cas/casa2.jpg",
+      "precio": 220000,
+      "ubicacion": "Godoy Cruz",
+      "descripcion": "Hermosa casa"
+    },
+    {
+      "id": 3,
+      "titulo": "Casa - 170m² - 2 Ambientes - 1 baño - Maipú",
+      "imagen": "/cas/casa3.jpg",
+      "precio": 200000,
+      "ubicacion": "Maipú",
+      "descripcion": "Hermosa casa"
+    },
+
+    {
+      "id": 4,
+      "titulo": "Casa - 200m² - 3 Ambientes - 2 baños - Capital",
+      "imagen": "/cas/casa4.jpg",
+      "precio": 150000,
+      "ubicacion": "Capital",
+      "descripcion": "Hermosa casa"
+    }
+]
+  
